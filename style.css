@@ -1,0 +1,264 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f9f6;
+    color: #333;
+}
+
+/* Menu de Navegação */
+header {
+    background-color: #2e7d32; /* Verde escuro */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a5d6a7; /* Verde claro ao passar o mouse */
+}
+
+/* Seção Principal */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #e8f5e9;
+}
+
+.hero h1 {
+    color: #1b5e20;
+    margin-bottom: 10px;
+}
+
+/* Vitrine de Produtos */
+.vitrine {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.vitrine h2 {
+    margin-bottom: 30px;
+    color: #2e7d32;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Cards das Plantas */
+.card-planta {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.card-planta:hover {
+    transform: translateY(-5px);
+}
+
+.foto-placeholder {
+    font-size: 50px;
+    background-color: #f1f8e9;
+    padding: 30px 0;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+
+.card-planta h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.preco {
+    color: #2e7d32;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.btn-comprar {
+    width: 100%;
+    padding: 10px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-comprar:hover {
+    background-color: #1b5e20;
+}
+
+/* Estilo do Contador do Carrinho */
+.carrinho-container {
+    color: #fff;
+    background-color: #1b5e20; /* Verde mais escuro para destacar */
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+#contador-carrinho {
+    background-color: #fff;
+    color: #1b5e20;
+    padding: 2px 8px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+/* Seção Detalhes do Carrinho */
+.carrinho-detalhes {
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.carrinho-detalhes h2 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+}
+
+#lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#lista-carrinho li {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lista-vazia li {
+    text-align: center;
+    color: #999 !important;
+    justify-content: center !important;
+}
+
+/* Botão Limpar Carrinho */
+.btn-secundario {
+    background-color: #d32f2f; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.btn-secundario:hover {
+    background-color: #b71c1c;
+}
+/* Estilo do Valor Total */
+.total-pedido {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1b5e20;
+    margin: 20px 0;
+    padding-top: 15px;
+    border-top: 2px dashed #e0e0e0;
+}
+/* Organização dos botões inferiores */
+.botoes-acoes {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn-primario {
+    background-color: #25d366; /* Verde do WhatsApp */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background 0.2s;
+}
+
+.btn-primario:hover {
+    background-color: #128c7e;
+}
+
+/* Botão de excluir item individual */
+.btn-remover-item {
+    background: none;
+    border: none;
+    color: #d32f2f;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0 5px;
+    margin-left: 10px;
+    transition: transform 0.1s;
+}
+
+.btn-remover-item:hover {
+    transform: scale(1.2);
+}

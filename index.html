@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor e Verde - Venda de Mudas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Menu de Opções / Navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">🌿 Sabor & Verde</div>
+            <ul class="nav-links">
+                <li><a href="#home">Início</a></li>
+                <li><a href="#mudas">Nossas Mudas</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <!-- Novo item: Contador do Carrinho -->
+                <li class="carrinho-container">
+                    🛒 Carrinho: <span id="contador-carrinho">0</span>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Seção Principal -->
+    <main id="home">
+        <section class="hero">
+            <h1>Cultive a Natureza na sua Casa</h1>
+            <p>Escolha as melhores mudas de plantas frutíferas e ornamentais.</p>
+        </section>
+
+               <!-- Vitrine de Mudas Dinâmica (Puxada do Banco de Dados) -->
+        <section id="mudas" class="vitrine">
+            <h2>Mudas Disponíveis</h2>
+            <!-- Deixamos o container vazio para o JS preencher -->
+            <div id="produtos-dinamicos" class="produtos-container">
+                <p>Carregando mudas do banco de dados...</p>
+            </div>
+        </section>
+
+                <!-- Seção: Resumo do Carrinho, Lista e Total -->
+                <section id="carrinho-secao" class="carrinho-detalhes">
+                    <h2>Seu Pedido</h2>
+                    <ul id="lista-carrinho" class="lista-vazia">
+                        <li id="item-vazio">Nenhuma muda adicionada ainda.</li>
+                    </ul>
+
+                    <div id="total-container" class="total-pedido">
+                        <span>Total da Compra:</span>
+                        <span id="valor-total">R$ 0,00</span>
+                    </div>
+
+                    <!-- Container dos botões de ação -->
+                    <div class="botoes-acoes">
+                        <button id="btn-limpar" class="btn-secundario">Limpar Tudo</button>
+                        <button id="btn-finalizar" class="btn-primario">🚀 Finalizar no WhatsApp</button>
+                    </div>
+                </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
